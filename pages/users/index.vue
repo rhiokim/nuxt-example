@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   async asyncData({ app }) {
     const { data } = await app.$axios.get('https://jsonplaceholder.typicode.com/users')
