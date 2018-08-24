@@ -32,7 +32,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
+@import '../assets/styles/vars'
+
 .container {
   min-height: 100vh;
   display: flex;

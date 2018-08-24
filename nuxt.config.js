@@ -1,3 +1,5 @@
+const nib = require('nib')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -31,6 +33,13 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
+        }, {
+          test: /\.styl$/,
+          loader: 'stylus-loader',
+          exclude: /(node_modules)/,
+          options: {
+            use: [nib()]
+          }
         })
       }
     }
