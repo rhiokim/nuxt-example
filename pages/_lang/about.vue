@@ -1,14 +1,13 @@
 <template>
-  <div class="Content">
-    <div class="container">
-      <h1 class="Content__Title">{{ $t('about.title') }}</h1>
-      <p>{{ $t('about.introduction') }}</p>
-    </div>
+  <div class="container">
+    <h1>{{ $t('about.title') }}</h1>
+    <p>{{ $t('about.introduction') }}</p>
   </div>
 </template>
 
 <script>
 export default {
+  transition: 'bounce',
   head () {
     return { title: this.$t('about.title') }
   }

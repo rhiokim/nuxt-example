@@ -12,6 +12,8 @@ export default {
   /* Custom Layout Example */
   layout: 'dark',
 
+  transition: 'slide-right',
+
   validate({ params }) {
     return !isNaN(+params.id)
   },
