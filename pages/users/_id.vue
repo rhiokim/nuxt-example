@@ -19,6 +19,12 @@ export default {
     } catch (e) {
       error({ message: 'User not found', statusCode: 404 })
     }
+  },
+  /* Pages - Head Example */
+  head () {
+    return {
+      title: this.username
+    }
   }
 }
 </script>

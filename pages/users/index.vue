@@ -14,6 +14,12 @@ export default {
   async asyncData({ app }) {
     const { data } = await app.$axios.get('https://jsonplaceholder.typicode.com/users')
     return { users: data }
+  },
+  /* Pages - Head Example */
+  head () {
+    return {
+      title: 'Users'
+    }
   }
 }
 </script>
