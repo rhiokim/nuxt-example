@@ -23,6 +23,9 @@
       <p>
         user-agent: {{userAgent}}
       </p>
+      <nuxt-link to="/about">영어버젼 소개</nuxt-link>,
+      <nuxt-link to="/ko/about">한글버젼 소개</nuxt-link>,
+      <nuxt-link to="/fr/about">프랑스버젼 소개</nuxt-link>
     </div>
   </section>
 </template>

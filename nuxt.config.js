@@ -48,7 +48,11 @@ module.exports = {
     }
   },
   router: {
-    middleware: ['user-agent']
+    middleware: [ 'user-agent', 'i18n' ]
+  },
+  plugins: [ '~/plugins/i18n.js' ],
+  generate: {
+    routes: [ '/', '/about', '/ko/about', '/fr/about' ]
   }
 }
 

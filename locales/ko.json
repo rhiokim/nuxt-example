@@ -1,0 +1,17 @@
+{
+  "links": {
+    "home": "홈",
+    "about": "소개",
+    "english": "영어버젼",
+    "korea": "한국버젼",
+    "french": "프랑스버젼"
+  },
+  "home": {
+    "title": "환영합니다.",
+    "introduction": "이 페이지는 한글 소개 페이지입니다.."
+  },
+  "about": {
+    "title": "소개",
+    "introduction": "한글로 된 소개페이지 입니다."
+  }
+}
