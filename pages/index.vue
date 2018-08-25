@@ -19,6 +19,11 @@
           class="button--grey">GitHub</a>
       </div>
     </div>
+    <div>
+      <p>
+        user-agent: {{userAgent}}
+      </p>
+    </div>
   </section>
 </template>
 
@@ -28,6 +33,11 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
+  },
+  asyncData({ store, route, userAgent }) {
+    return {
+      userAgent
+    }
   }
 }
 </script>
