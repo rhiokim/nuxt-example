@@ -9,6 +9,9 @@
 
 <script>
 export default {
+  /* Custom Layout Example */
+  layout: 'dark',
+
   validate({ params }) {
     return !isNaN(+params.id)
   },
