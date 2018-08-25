@@ -1,7 +1,6 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
+    <div v-if="false">
       <h1 class="title">
         nuxt-example
       </h1>
@@ -20,6 +19,8 @@
       </div>
     </div>
     <div>
+      <app-logo/>
+      <cached-component></cached-component>
       <p>
         user-agent: {{userAgent}}
       </p>
@@ -32,10 +33,12 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import CachedComponent from '~/components/CachedComponent.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    CachedComponent
   },
   asyncData({ store, route, userAgent }) {
     return {
