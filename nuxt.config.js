@@ -23,8 +23,13 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['@nuxtjs/pwa', { icon: false }]
   ],
+  manifest: {
+    name: 'PWA NAME',
+    lang: 'en'
+  },
   /*
   ** Build configuration
   */
