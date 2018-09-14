@@ -1,7 +1,7 @@
 // import express from 'express'
 // import { Nuxt, Builder } from 'nuxt'
 const express = require('express')
-const { Nuxt, Builder } = require('nuxt')
+const { Nuxt, Builder } = require('nuxt-edge')
 
 const app = express()
 
